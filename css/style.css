@@ -276,6 +276,14 @@ nav {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.experience-item {
+    margin-bottom: 1.5rem;
+    background: rgba(255,255,255,0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .skills {
     display: flex;
     flex-wrap: wrap;
