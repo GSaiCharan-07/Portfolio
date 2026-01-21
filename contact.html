@@ -93,7 +93,7 @@
                         <a href="https://www.linkedin.com/in/sai-charan-1764a4326/" target="_blank" class="social-icon">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://www.instagram.com/_call_me_g_123/" target="_blank" class="social-icon">
+                        <a href="https://www.instagram.com/charann_.in/" target="_blank" class="social-icon">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -103,7 +103,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 G. Sai Charan. All rights reserved.</p>
+        <p> Learning. Building. Growing. — G. Sai Charan</p>
     </footer>
 
     <script src="scripts/main.js"></script>
@@ -111,17 +111,43 @@
         // Form submission handling
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            
-            // Show success message
-            document.getElementById('formSuccess').style.display = 'flex';
-            document.getElementById('contactForm').style.display = 'none';
-            
-            // Reset form after 3 seconds
-            setTimeout(() => {
-                document.getElementById('contactForm').reset();
-                document.getElementById('contactForm').style.display = 'block';
-                document.getElementById('formSuccess').style.display = 'none';
-            }, 3000);
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Send data to backend
+            fetch('/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Show success message
+                    document.getElementById('formSuccess').style.display = 'flex';
+                    document.getElementById('contactForm').style.display = 'none';
+
+                    // Reset form after 3 seconds
+                    setTimeout(() => {
+                        document.getElementById('contactForm').reset();
+                        document.getElementById('contactForm').style.display = 'block';
+                        document.getElementById('formSuccess').style.display = 'none';
+                    }, 3000);
+                } else {
+                    alert('Error sending message. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error sending message. Please try again.');
+            });
         });
     </script>
 </body>
