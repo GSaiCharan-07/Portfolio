@@ -867,3 +867,18 @@ footer {
     max-height: none !important;
     height: auto !important;
 }
+.typing-text {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5) !important;
+}
+.typing-text {
+    color: #00ff00 !important;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+.hero h1 {
+    color: #ffd700 !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important;
+}
