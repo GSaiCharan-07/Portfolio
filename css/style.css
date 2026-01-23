@@ -882,3 +882,67 @@ footer {
     font-weight: 700 !important;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7) !important;
 }
+.about-text h2 {
+    color: #3498db !important;
+    font-weight: 600 !important;
+}
+
+.education-item h3 {
+    color: #e74c3c !important;
+    font-weight: 600 !important;
+}
+
+.education-item h4 {
+    color: #f39c12 !important;
+    font-weight: 500 !important;
+}
+
+.experience-item h3 {
+    color: #2ecc71 !important;
+    font-weight: 600 !important;
+}
+
+.skills strong {
+    color: #9b59b6 !important;
+    font-weight: 700 !important;
+}
+
+.skill-item {
+    color: #1abc9c !important;
+    font-weight: 500 !important;
+}
+.about-text h2 {
+    color: #00ffff !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+.education-item h3 {
+    color: #ff6b6b !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+.education-item h4 {
+    color: #ffa500 !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+.experience-item h3 {
+    color: #32cd32 !important;
+    font-weight: 700 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+.skills strong {
+    color: #ff69b4 !important;
+    font-weight: 800 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
+
+.skill-item {
+    color: #ffff00 !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8) !important;
+}
